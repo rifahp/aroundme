@@ -1,0 +1,15 @@
+{% extends 'nav.html' %}
+{% block side %}
+<h4 class=" bg-warning text-center">Edit Bio</h4>
+        <form action=""  method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <table class="table">
+                {{form.as_table}}
+                <tr>
+                    <td colspan="2" class="text-center">
+                        <button class="btn btn-warning">Update</button>
+                    </td>
+                </tr>
+            </table>
+        </form>  
+  {% endblock %}

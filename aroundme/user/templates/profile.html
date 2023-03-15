@@ -1,0 +1,220 @@
+{% extends 'nav.html' %}
+{% block side %}
+<h4 class= "text-center">Profile</h4>
+
+
+<div class="row">
+  
+  <div class="col-10" style="height: 100%; border-right: 2px solid black;">
+    <div class="card" style="width: 100%;">
+    
+      <img class="card-img-top" src="{{request.user.bio_user.profile_pic.url}}" alt="card image cap">
+      <div class="card-body">
+        <h5 class="card-title">first name: {{request.user.first_name}}</h5>
+        <h5 class="card-title">last name: {{request.user.last_name}}</h5>
+        <h5 class="card-text">status: {{request.user.bio_user.status}}</h5>
+        <h5 class="card-text">date of birth: {{request.user.bio_user.dob}}</h5>
+        </div>
+
+        <ul class="list-group list-group-flush">
+          <h5 class="list-group-item">Gender: {{request.user.bio_user.gender}}</h5>
+          <h5 class="list-group-item">Phone:  {{request.user.bio_user.phone}}</h5>
+          <h5 class="list-group-item">Email:  {{request.user.bio_user.email}}</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Card Link</a>
+            <a href="#" class="card-link">Another Link</a>
+            </div>
+            
+          </div>
+          </div>
+          
+          <div class="col-2">
+            {% if request.user.bio_user %}
+             <a href="{% url 'editbio' request.user.bio_user.id %}" class="btn btn-warning">Edit Bio</a><br><br>
+
+             <a href="{% url 'cpswd' %}"class="btn btn-info">ChangePassword</a><br>
+             {% else %}
+             <a href="{% url 'bio'  %}" class="btn btn-warning">Add Bio</a>
+              {% endif %}
+          </div>     
+</div>
+{% endblock %}
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
